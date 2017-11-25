@@ -6,9 +6,40 @@
         $("#palette").attr("src", "assets/icons/palette.png");
     }
     
+    function displayModal(){
+        $("#animatedModal").show();      
+    }
+    
+    function closeModal(){
+        //var demo = $("#modal").animatedModal();
+        //demo.open();
+        modal.close();
+        //$("#modal").hide();
+        //demo.hide();
+        //window.location.href = "#portfolio";
+    }
+    
+    var modal;
+    
     $(document).ready(function(){
         
-        $("#modal").animatedModal({
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            // Selectors
+            ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+            header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+            // Speed & Easing
+            speed: 500, // Integer. How fast to complete the scroll in milliseconds
+            offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            easing: 'Linear', // Easing pattern to use
+            customEasing: function (time) {}, // Function. Custom easing pattern
+
+            // Callback API
+            before: function () {}, // Callback to run before scroll
+            after: function () {} // Callback to run after scroll
+        });
+        
+        modal = $("#modal").animatedModal({
             modalTarget: 'animatedModal',
             animatedIn: 'slideInRight',
             animatedOut: 'slideOutRight',
@@ -35,4 +66,11 @@
             $(".mobile_hidden").show();
             $("#show_more").hide();
         });
+        
+        $(function(){
+
+            // jQuery methods go here...
+
+        });
+
     });

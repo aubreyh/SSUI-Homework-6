@@ -129,6 +129,10 @@ h3{
     padding-right: 5%;
 }
 
+#animatedModal{
+    display: none;
+}
+
 #modal_row {
     background-color: #20252a;
     padding-top: 75px;
@@ -447,6 +451,9 @@ h3{
         visibility: hidden;
    }
 }
+
+
+
 
 /* sm (for tablets - screens equal to or greater than 768px wide) */
 @media screen and (max-width: 991px) and (min-width: 768px) {
