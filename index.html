@@ -9,6 +9,8 @@
     <title>Aubrey Henderson</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/index.css" rel="stylesheet">
@@ -26,26 +28,47 @@
           </a>
         </div>
         <div class="col-6 d-none d-md-block">
-          <ul>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+          <ul id="main_ul">
+            <li><a class="main_a" href="">Portfolio</a></li>
+            <li><a class="main_a" href="">Skills</a></li>
+            <li><a class="main_a" href="">About</a></li>
+            <li><a class="main_a" href="">Contact</a></li>
           </ul>
         </div>
         <div id="menu_bars" class="col-6 d-md-none d-lg-none d-xl-none">
-          <a href="" class="icon">
+          <a id="modal" class="main_a" href="#animatedModal" class="icon">
               <i class="fa fa-bars"></i>
           </a>
         </div>
       </div>
       <div class="row">
         <div class="col-12 d-none d-md-block">
-          <hr />
+          <hr id="main_hr" />
         </div>
       </div>
-    
-    
+ 
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+          
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" href="">Portfolio</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" href="">Skills</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" href="">About</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" href="">Contact</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div> <!-- end modal-content -->
+    </div>
+        
 
     <!-- Portfolio -->
     <div id="main_page">
@@ -233,6 +256,7 @@
     <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
     <script src="https://unpkg.com/popper.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/animatedModal.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
   </body>
