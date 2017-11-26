@@ -1,3 +1,6 @@
+    var modal; 
+
+    /*
     function hover(){
         $("#palette").attr("src", "assets/icons/palette2.png");
     }
@@ -5,22 +8,15 @@
     function unhover(){
         $("#palette").attr("src", "assets/icons/palette.png");
     }
-    
+    */
     function displayModal(){
         $("#animatedModal").show();      
     }
     
     function closeModal(){
-        //var demo = $("#modal").animatedModal();
-        //demo.open();
         modal.close();
-        //$("#modal").hide();
-        //demo.hide();
-        //window.location.href = "#portfolio";
     }
-    
-    var modal;
-    
+        
     $(document).ready(function(){
         
         var scroll = new SmoothScroll('a[href*="#"]', {
@@ -67,10 +63,4 @@
             $("#show_more").hide();
         });
         
-        $(function(){
-
-            // jQuery methods go here...
-
-        });
-
     });

@@ -17,8 +17,9 @@
   </head>
   
   <body id="main">
+    <div id="for_testing"></div>
     <!-- Header -->
-    <div id="home" class="container">
+    <div class="container">
       <div class="row">
         <div class="col-6">
           <a class="main_a" href="">
@@ -74,15 +75,51 @@
     <div id="main_page">
       <section id="portfolio">
         <div class="masonry">
-          <img class="item" src="assets/thumbnails/breakfast_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/breakfast.png'" onmouseout="this.src='assets/thumbnails/breakfast_bw.png'" />
-          <img class="item" src="assets/thumbnails/muddy_paws_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/muddy_paws.png'" onmouseout="this.src='assets/thumbnails/muddy_paws_bw.png'" />
-          <img class="item" src="assets/thumbnails/que_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/que.png'" onmouseout="this.src='assets/thumbnails/que_bw.png'" />
-          <img class="item mobile_hidden" src="assets/thumbnails/cognitive_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/cognitive.png'" onmouseout="this.src='assets/thumbnails/cognitive_bw.png'" />
-          <img class="item mobile_hidden" src="assets/thumbnails/restroom_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/restroom.png'" onmouseout="this.src='assets/thumbnails/restroom_bw.png'" />      
-          <img class="item" src="assets/thumbnails/cura_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/cura.png'" onmouseout="this.src='assets/thumbnails/cura_bw.png'" />
-          <img class="item" src="assets/thumbnails/dashboard_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/dashboard.png'" onmouseout="this.src='assets/thumbnails/dashboard_bw.png'" />
-          <img class="item" src="assets/thumbnails/ucre_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/ucre.png'" onmouseout="this.src='assets/thumbnails/ucre_bw.png'" />
-          <img class="item mobile_hidden" src="assets/thumbnails/glucose_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/glucose.png'" onmouseout="this.src='assets/thumbnails/glucose_bw.png'" />      
+        
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/breakfast_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/breakfast.png'" onmouseout="this.src='assets/thumbnails/breakfast_bw.png'" />
+            <div class="overlay">Breakfast Delivery Service</div>
+          </div>
+
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/muddy_paws_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/muddy_paws.png'" onmouseout="this.src='assets/thumbnails/muddy_paws_bw.png'" />
+            <div class="overlay">Client-Centered Web Design</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/que_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/que.png'" onmouseout="this.src='assets/thumbnails/que_bw.png'" />
+            <div class="overlay">Classroom Discussion Application</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item mobile_hidden" src="assets/thumbnails/cognitive_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/cognitive.png'" onmouseout="this.src='assets/thumbnails/cognitive_bw.png'" />
+            <div class="overlay">Intelligent Radiology Tutor</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item mobile_hidden" src="assets/thumbnails/restroom_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/restroom.png'" onmouseout="this.src='assets/thumbnails/restroom_bw.png'" />      
+            <div class="overlay">Public Restroom Redesign</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/cura_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/cura.png'" onmouseout="this.src='assets/thumbnails/cura_bw.png'" />
+            <div class="overlay">Health Management System</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/dashboard_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/dashboard.png'" onmouseout="this.src='assets/thumbnails/dashboard_bw.png'" />
+            <div class="overlay">Ecological Dashboard</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item" src="assets/thumbnails/ucre_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/ucre.png'" onmouseout="this.src='assets/thumbnails/ucre_bw.png'" />
+            <div class="overlay">Programmer-Centered Research</div>
+          </div>
+          
+          <div class="portfolio_image">
+            <img class="item mobile_hidden" src="assets/thumbnails/glucose_bw.png" alt="project" onmouseover="this.src='assets/thumbnails/glucose.png'" onmouseout="this.src='assets/thumbnails/glucose_bw.png'" /> 
+            <div class="overlay">Glucose Control System</div>
+          </div>      
         </div>
         <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
       </section><!-- end portfolio section -->
@@ -93,7 +130,7 @@
         <div class="row skills">
 		  <div class="col-md-3 text-center">
             <a href="#skills" class="icon">
-              <i class="fa fa-laptop"></i>
+              <i class="fa fa-question"></i>
             </a>
 		    <h2>Research</h2>
 	      </div>
@@ -148,12 +185,12 @@
   		  </div>
           <div class="col-md-3 text-center">
             <h2>Design</h2>
-			  <a href="#skills" class="icon" onmouseover="hover();" onmouseout="unhover();">
-                <img id="palette" alt="icon" src="assets/icons/palette.png">
+			  <a href="#skills" class="icon">
+                <i class="fa fa-sticky-note-o"></i>
               </a>
 		  </div>
 		  <div class="col-md-3">
-            <p align="center" class="proskills">
+            <p align="center" class="dev_skills">
               <span>Java</span>
               <span>Python</span><br/>
               <span>C#</span>
@@ -179,12 +216,32 @@
       
       <!-- About -->
       <section id="about" class="section">
-
             <h1 class="section-title">About</h1>
               <div class="banner"></div>
               <div id="card">
                 <div id="my_photo"><img src="assets/images/my_photo.jpg" alt="photo" width="175"></div>
-                <div id="card_half"></div>
+                <div id="card_half">
+                  <div id="card_text">
+                    <h4><b>Aubrey Henderson</b></h4>
+                    <h5><b>UX Designer & Researcher</b></h5>
+                    <h6><b>Phone:</b></h6>
+                    <h6>412-268-3954</h6>
+                    <h6><b>Email:</b></h6>
+                    <h6>amhenderson@sei.cmu.edu</h6>
+                    <h6><b>Address:</b></h6>
+                    <h6>4500 Fifth Ave.</h6>
+                    <h6>Pittsburgh, PA 15213</h6>
+                  </div>
+                </div>
+                <div id="online">
+                  <ul class="social_media">
+                    <li><a href="#twitter-link"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#facebook-link"><i class="fa fa-facebook-official"></i></a></li> 
+                    <li><a href="#pinterest-link"><i class="fa fa-pinterest"></i></a></li>     
+                    <li><a href="#instagram-link"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#linkedin-link"><i class="fa fa-linkedin-square"></i></a></li>
+                  </ul>
+                </div>
               </div> <!-- end card -->
 
               
