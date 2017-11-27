@@ -9,10 +9,11 @@
     <title>Aubrey Henderson</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="styles.less" rel="stylesheet/less" type="text/css" />
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
   </head>
   
@@ -28,7 +29,7 @@
             <span id="role">UX Designer & Researcher</span>
           </a>
         </div>
-        <div class="col-6 d-none d-md-block">
+        <div class="col-6 d-none d-lg-block">
           <ul id="main_ul">
             <li><a class="main_a" href="">Portfolio</a></li>
             <li><a class="main_a" data-scroll href="#skills">Skills</a></li>
@@ -36,14 +37,14 @@
             <li><a class="main_a" data-scroll href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div id="menu_bars" class="col-6 d-md-none d-lg-none d-xl-none">
+        <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
           <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
               <i class="fa fa-bars"></i>
           </a>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 d-none d-md-block">
+        <div class="col-12 d-none d-lg-block">
           <hr id="main_hr" />
         </div>
       </div>
@@ -127,14 +128,32 @@
       <!-- Technical Skills -->
       <section id="skills" class="section">
 	    <h1 class="section-title">Technical Skills</h1>
-        <div class="row skills">
+        <div class="row skills wow fadeInLeft" data-wow-duration="2s">
 		  <div class="col-md-3 text-center">
             <a href="#skills" class="icon">
               <i class="fa fa-question"></i>
             </a>
 		    <h2>Research</h2>
 	      </div>
-		  <div class="col-md-3">
+          <!-- for xs -->
+	      <div class="col-md-3 d-md-none d-lg-none d-xl-none">     
+            <!-- Research -->
+            <p align="center">
+              Contextual inquiry<br/>
+              Persona creation<br/>
+              Competitive analysis<br/>
+              Interviews<br/>
+              Surveys<br/>
+              Task analysis<br/>
+            </p>  
+  		  </div>  
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none"> 
+			  <a href="#skills" class="icon mobile_icon">
+                <i class="fa fa-sticky-note-o"></i>
+              </a>
+              <h2>Design</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
             <!-- Design -->
             <p align="center">
               Affinity diagrams<br/>
@@ -144,14 +163,65 @@
               Paper prototypes<br/>
               Wireframes<br/>
             </p>  
-		  </div>          
-		  <div class="col-md-3 text-center">
+		  </div> 
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none">
+		    <a href="#skills" class="icon mobile_icon">
+              <i class="fa fa-code"></i>
+            </a>
+			<h2>Development</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+            <p align="center" class="dev_skills">
+              <span>Java</span>
+              <span>Python</span><br/>
+              <span>C#</span>
+              <span>C++</span><br/>
+              <span>Perl</span>
+              <span>JavaScript</span><br/>
+              <span>Ruby</span>
+              <span>HTML5</span><br/>
+              <span>CSS</span>
+              <span>XML</span><br/>
+              <span>PHP</span>
+              <span>AJAX</span><br/>
+            </p>  
+	      </div>
+          <div class="col-md-3 text-center d-md-none d-lg-none d-xl-none">
+            <a href="#skills" class="icon mobile_icon">
+              <i class="fa fa-bar-chart-o"></i>
+            </a>
+            <h2>Evaluation</h2>
+		  </div>
+          <div class="col-md-3 d-md-none d-lg-none d-xl-none">
+		    <p align="center">
+            <!-- Evaluation -->
+              Heuristic evaluation<br/>
+              Usability testing<br/>
+              Think alouds<br/>
+              A/B testing<br/>
+              Statistical analysis<br/>
+              Web log analysis<br/>
+            </p> 
+          </div>
+          <!-- end for xs -->     
+		  <div class="col-md-3 d-none d-md-block">
+            <!-- Design -->
+            <p align="center">
+              Affinity diagrams<br/>
+              Work models<br/>
+              Visioning<br/>
+              Storyboards<br/>
+              Paper prototypes<br/>
+              Wireframes<br/>
+            </p>  
+		  </div>      
+		  <div class="col-md-3 text-center d-none d-md-block">
 		    <a href="#skills" class="icon">
               <i class="fa fa-code"></i>
             </a>
 			<h2>Development</h2>
 		  </div>
-		  <div class="col-md-3">
+		  <div class="col-md-3 d-none d-md-block">
 		    <p align="center">
             <!-- Evaluation -->
               Heuristic evaluation<br/>
@@ -171,8 +241,8 @@
 	      <div class="col-md-3 d-none d-md-block"><span class="skills_dot"></span></div>
 		</div><!-- end row -->
 		
-		<div class="row skills bottom-row">
-	      <div class="col-md-3">     
+		<div class="row skills bottom-row wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+	      <div class="col-md-3 d-none d-md-block">     
             <!-- Research -->
             <p align="center">
               Contextual inquiry<br/>
@@ -183,13 +253,13 @@
               Task analysis<br/>
             </p>  
   		  </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center d-none d-md-block">
             <h2>Design</h2>
 			  <a href="#skills" class="icon">
                 <i class="fa fa-sticky-note-o"></i>
               </a>
 		  </div>
-		  <div class="col-md-3">
+		  <div class="col-md-3 d-none d-md-block">
             <p align="center" class="dev_skills">
               <span>Java</span>
               <span>Python</span><br/>
@@ -205,7 +275,7 @@
               <span>AJAX</span><br/>
             </p>  
 	      </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center d-none d-md-block">
 		    <h2>Evaluation</h2>
             <a href="#skills" class="icon">
               <i class="fa fa-bar-chart-o"></i>
@@ -219,11 +289,11 @@
             <h1 class="section-title">About</h1>
               <div class="banner"></div>
               <div id="card">
-                <div id="my_photo"><img src="assets/images/my_photo.jpg" alt="photo" width="175"></div>
-                <div id="card_half">
+                <div id="my_photo_container" class="wow fadeInLeft" data-wow-duration="1.5s"><img id="my_photo" src="assets/images/my_photo.jpg" alt="photo"></div>
+                <div id="card_half" class="wow fadeInRight" data-wow-duration="1.5s">
                   <div id="card_text">
-                    <h4><b>Aubrey Henderson</b></h4>
-                    <h5><b>UX Designer & Researcher</b></h5>
+                    <h4>Aubrey Henderson</h4>
+                    <h5>UX Designer & Researcher</h5>
                     <h6><b>Phone:</b></h6>
                     <h6>412-268-3954</h6>
                     <h6><b>Email:</b></h6>
@@ -233,7 +303,7 @@
                     <h6>Pittsburgh, PA 15213</h6>
                   </div>
                 </div>
-                <div id="online">
+                <div id="card_base" class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
                   <ul class="social_media">
                     <li><a href="#twitter-link"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#facebook-link"><i class="fa fa-facebook-official"></i></a></li> 
@@ -266,7 +336,7 @@
 
             
             <div class="row">
-              <div class="col-5">
+              <div class="col-lg-5 col-md-12 wow fadeInLeft" data-wow-duration="1.5s">
                 <div id="address">
                   <span id="signature">Aubrey Henderson</span><br>  
                   <span>4500 Fifth Ave.<br>	
@@ -276,16 +346,20 @@
                   </span>
                 </div> <!--End address -->
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-md-12 wow fadeInRight" data-wow-duration="1.5s">
               <form id="contact-form">
-                <div class="input-group form-group">
-                  <input id="contact-name" name="contactName" placeholder="Name" class="form-control requiredField" type="text"/>
-                  <span id="form_margin"></span>
-                  <input id="contact-mail" name="email" placeholder="Email" class="form-control requiredField" type="email" />
-                </div><!-- end name and email input -->
-
-		        <div class="form-group">
+                <div class="form-group">
+                  <div class="controls">
+                    <input id="contact-name" name="contactName" placeholder="Name" class="form-control requiredField" type="text"/>                 
+                  </div>
+                </div><!-- end name input -->
+                <div class="form-group">
 		          <div class=" controls">
+			        <input id="contact-mail" name="email" placeholder="Email" class="form-control requiredField" type="email" />
+			      </div>
+	            </div><!-- end email input -->
+		        <div class="form-group">
+		          <div class="controls">
 			        <input id="contact-subject" name="subject" placeholder="Subject" class="form-control input-lg requiredField" type="text" />
 			      </div>
 	            </div><!-- end subject input -->
@@ -315,6 +389,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/smooth-scroll.js"></script>
     <script src="js/animatedModal.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
   </body>

@@ -63,12 +63,14 @@ h1{
     /*font-weight: 300;*/
     text-align: center;
     z-index: 1;
+    font-weight: bold;
 }
 
 h2{
     font-family: Raleway-Regular;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: bold;
 }
 
 h3{
@@ -80,7 +82,9 @@ h3{
 h4{
     font-family: Raleway-Regular;
     font-size: 14px;
+    font-size: 14px;
     line-height: 1;
+    font-weight: bold;
 }
 
 h5{
@@ -88,6 +92,7 @@ h5{
     font-size: 9px;
     line-height: 1;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 h6{
@@ -119,11 +124,13 @@ h6{
 .main_a {
   color: black;
   text-decoration: none; /* no underline */
+  font-weight: bold;
 }
 
 .main_a:hover { 
   color: black; 
   text-decoration: none; /* no underline */
+  font-weight: bold;
 }
 
 #main_hr {
@@ -356,8 +363,12 @@ h6{
     background-position: center; 
 }
 
-#my_photo{
+#my_photo_container{
     float: left;
+}
+
+#my_photo{
+    width: 175px;
 }
 
 #card_half{
@@ -371,7 +382,22 @@ h6{
     margin: -200px auto auto auto; 
     height: 240px;
     width: 400px;
+    background-color: none;
+    position: relative;
+}
+
+#card_base{
     background-color: #42B3AD;
+    width: 100%;
+    height: 40px;
+    //opacity: 0.85;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #card_text{
@@ -421,6 +447,9 @@ h6{
 
 /* Contact */
 
+#contact{
+    padding-bottom: 15px;
+}
 #contact_content{
     width: 80%;
     margin: auto;
@@ -444,6 +473,11 @@ h6{
 #copyright{
     margin: 15px auto auto;
     font-size: 10pt;
+}
+
+:placeholder-shown {
+  font-family: Palatino;
+  font-size: 14px;
 }
 
 /* xs (for phones - screens less than 768px wide) */
@@ -478,7 +512,7 @@ h6{
         font-family: SimplyGlamorous;
         font-size: 22px;
         color: #42B3AD;
-        line-height: .25;
+        line-height: 1;
         white-space: nowrap;
     }
     
@@ -493,7 +527,7 @@ h6{
     #menu_bars{
         font-size: 28px;  
         text-align: right;   
-        margin-top: 12px;        
+        margin-top: -12px;        
     }
       
     .modal-content{
@@ -505,14 +539,45 @@ h6{
     }
     
     h1{
+        font-family: Raleway-Regular;
         font-size: 18px;
-        margin-bottom: 25px;    
+        margin-bottom: 25px;
+        font-weight: bold;        
     }
     
     h2{
         font-family: Raleway-Regular;
         text-transform: uppercase;
         font-size: 15px;
+        font-weight: bold;
+    }
+    
+    
+    h3{
+        font-family: Raleway-Regular;
+        font-size: 15px;
+        line-height: 4;
+    }
+    
+    h4{
+        font-family: Raleway-Regular;
+        font-size: 11px;
+        line-height: .75;
+        font-weight: bold;
+    }
+
+    h5{
+        font-family: Raleway-Regular;
+        font-size: 7px;
+        line-height: .75;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    h6{
+        font-family: Raleway-Regular;
+        font-size: 6px;
+        line-height: .25;
     }
     
     /* Portfolio */
@@ -534,18 +599,108 @@ h6{
         cursor: pointer;
     }
     
+    /* Skills */
+    
     #skills .row.skills_line {
-        //width: 100%;
-        //margin: auto;
-        height: 6px;
-        background: #42B3AD;
-        margin-bottom: 24px;
         visibility: hidden;
-   }
+    }
+ 
+    #skills p {
+        margin-bottom: 0px;
+    } 
    
+    #skills .mobile_icon {
+        margin-top: 50px;
+    } 
+    
+    /* About */
+   
+    .banner{
+        height: 200px;
+        width: 200%;
+        background: url('../assets/images/about_bg.jpg') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        margin-left: -50%;
+    }
+
+    #my_photo{
+        width: 100px;
+    }
+
+    
+    #card_half{
+        height: 114.553px;
+        width: 125px;
+        float: left;
+        background-color: white;
+    }
+    
+    #card{
+        margin: -165px auto 10px auto; 
+        height: 140px;
+        width: 225px;
+        background-color: #42B3AD;
+    }
+
+    #card_text{
+        margin: 10px auto auto 10px; 
+    }
+
+    .social_media{
+        margin: 0 0 0 60px;
+        padding: 0 0 0 0;
+    }
+
+    .social_media li{
+        display: inline-block;
+        margin: 0 10px 10px 0;
+    }
+
+    .social_media li a{
+        display: inline-block;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #FFFFFF;
+        -webkit-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+    }
+
+    #about_text{
+        margin-top: 40px;
+        width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Contact */
+    #contact{
+        background-color: #F2F1F1;
+    }
+    
+    #contact-form{
+        margin-top: 25px;
+    }
+    
+    #signature{
+        font-size: 16px;
+    }
+    
+    #submit_button {
+        border: 3px solid black;
+        width: 100%
+    }
 }
 
-
+.wow { 
+    visibility: hidden; 
+}
 
 
 /* sm (for tablets - screens equal to or greater than 768px wide) */
@@ -560,6 +715,7 @@ h6{
     body{
        font-size: 14px; 
     }
+    
     
     #logo{
         font-family: SimplyGlamorous;
@@ -576,6 +732,12 @@ h6{
         line-height: 1;
     }  
     
+    #menu_bars{
+        font-size: 28px;  
+        text-align: right;   
+        margin-top: -12px;        
+    }
+    
     .masonry {
         -moz-column-count: 3;
         -webkit-column-count: 3;
@@ -586,12 +748,13 @@ h6{
         font-family: Raleway-Regular;
         text-transform: uppercase;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 75px;
         font-size: 20px;
         line-height: 64px;
         /*font-weight: 300;*/
         text-align: center;
         z-index: 1;
+        font-weight: bold;
     }
 
     h2{
@@ -599,13 +762,6 @@ h6{
         text-transform: uppercase;
         font-size: 14px;
     }
-/*
-    h3{
-        font-family: Raleway-Regular;
-        font-size: 18px;
-        line-height: 4;
-    }
-    */
     
     p{
         font-size: 12px;
@@ -640,6 +796,10 @@ h6{
         margin-top: 40px;
     }
     */
+    /* Contact */
+    #contact-form{
+        margin-top: 25px;
+    }
 }
 
 
@@ -711,6 +871,7 @@ h6{
         /*font-weight: 300;*/
         text-align: center;
         z-index: 1;
+        font-weight: bold;
     }
 
     h2{
