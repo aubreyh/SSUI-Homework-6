@@ -1,251 +1,329 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
     <title>Aubrey Henderson</title>
-
     <!-- CSS -->
-    <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/project.css" rel="stylesheet" />
   </head>
-  
-	<body>
-	
-    <div id="for_testing"></div>
-    <!-- Header -->
-    <div class="container">
+  <body>
+  <div id="for_testing"></div>
+  <!-- Header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <a class="main_a" href="">
+          <span id="logo">Aubrey Henderson</span>
+          <br />
+          <span id="role">UX Designer &amp; Researcher</span>
+        </a>
+      </div>
+      <div class="col-6 d-none d-lg-block">
+        <ul id="main_ul">
+          <li>
+            <a class="main_a" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="main_a" data-scroll="" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="main_a" data-scroll="" href="#about">About</a>
+          </li>
+          <li>
+            <a class="main_a" data-scroll="" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
+        <a id="modal" href="#animatedModal" onclick="displayModal();" class="icon"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-none d-lg-block">
+        <hr id="main_hr" />
+      </div>
+    </div>
+    <div id="main_page">
       <div class="row">
-        <div class="col-6">
-          <a class="main_a" href="">
-            <span id="logo">Aubrey Henderson</span>
-            <br>
-            <span id="role">UX Designer & Researcher</span>
-          </a>
+        <div class="col-md-5">
+          <img class="project_photo img-responsive" src="assets/projects/restroom/restroom.jpg" height="auto" width="100%"
+          alt="project" />
         </div>
-        <div class="col-6 d-none d-lg-block">
-          <ul id="main_ul">
-            <li><a class="main_a" href="">Portfolio</a></li>
-            <li><a class="main_a" data-scroll href="#skills">Skills</a></li>
-            <li><a class="main_a" data-scroll href="#about">About</a></li>
-            <li><a class="main_a" data-scroll href="#contact">Contact</a></li>
+        <div class="col-md-7">
+          <div>
+            <h1>Public Restroom Redesign</h1>
+            <p class="justify-text">Human Factors involves the study of factors and the development of tools that facilitate the
+            goals of enhancing performance, increasing safety, and augmenting user satisfaction.</p>
+            <p class="justify-text">The objective of this project was to find and fix something that involves real-world human
+            factors problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <hr id="project_hr" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Project Overview</h2>
+          <p>
+          <strong>Course Title:</strong> Human Factors
+          <br />
+          <strong>Project Type:</strong> Individual
+          <br />
+          <strong>Duration</strong>: 13 weeks
+          <br />
+          <strong>Methods</strong>: think-alouds, task analysis
+          <br /></p>
+        </div>
+        <div class="col-md-7">
+          <h2>Why Public Restrooms?</h2>
+          <p>Researchers have found that 15% of the American population routinely fails to wash their hands after using a public
+          restroom. Another 30% of the population avoids public restrooms completely.</p>
+          <p>Health consequences are thought to arise from two distinct sources: (1) bacterial/viral infections acquired through
+          contact with unsanitary fixtures, and (2) feelings of anxiety, fear, and/or disgust associated with the use of public
+          restrooms. In fact, the latter has been linked to other health conditions such as urinary infections and social
+          isolation.</p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Task Analysis</h2>
+          <p>The following steps reflect one correct way to perform the hand washing task in the evaluated setting.</p>
+          <ol>
+            <li>
+              <p>
+                <strong>Ensure paper towel is accessible</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Set up washing environment</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Find an available sink</p>
+                </li>
+                <li>
+                  <p>Turn on water</p>
+                </li>
+                <li>
+                  <p>Test and adjust water temperature</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p>
+                <strong>Wash hands</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Briefly place hands under running water</p>
+                </li>
+                <li>
+                  <p>Dispense soap</p>
+                </li>
+                <li>
+                  <p>Rub hands together for ≥ 20 seconds</p>
+                  <ol>
+                    <li>
+                      <p>Wash palms, between fingers, back of hands, base of thumbs, back of fingers, under fingernails, and
+                      wrists</p>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <p>Rinse hands with water</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p>
+                <strong>Dry hands with paper towel</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Turn off water faucet using paper towel</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Exit restroom</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Pull door handle using paper towel</p>
+                </li>
+                <li>
+                  <p>Discard paper towel in an appropriate waste receptacle outside</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">User Study</h2>
+          <p>Think-aloud studies with three female participants were conducted to witness performance of the hand washing task and
+          identify possible sources of task execution errors, mistakes, and inefficiencies.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>User Errors</h3>
+          <ul>
+            <li>
+              <p>Not following the procedure outlined by the CDC</p>
+            </li>
+            <li>
+              <p>Becoming re-contaminated after washing</p>
+            </li>
+            <li>
+              <p>Cross-contaminating clothing and belongings</p>
+            </li>
+            <li>
+              <p>Not dispensing enough soap</p>
+            </li>
           </ul>
         </div>
-        <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
-          <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
-              <i class="fa fa-bars"></i>
-          </a>
+        <div class="col-md-6">
+          <h3>Maintenance Issues</h3>
+          <ul>
+            <li>
+              <p>Broken faucet handle</p>
+            </li>
+            <li>
+              <p>Damaged paper towel dispenser</p>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 d-none d-lg-block">
-          <hr id="main_hr" />
+        <div class="col-md-6">
+          <h3>Design Oversights</h3>
+          <ul>
+            <li>
+              <p>Lid on the trash receptacle</p>
+            </li>
+            <li>
+              <p>Location of the trash receptacle</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Inefficiencies</h3>
+          <ul>
+            <li>
+              <p>Users must dispense paper towel prior to hand washing</p>
+            </li>
+            <li>
+              <p>Multiple steps are required to adjust the water temperature</p>
+            </li>
+          </ul>
         </div>
       </div>
-    
-			<div id="project_page">
-						
-              <div class="row">
-                <div class="col-md-5">
-                  
-                  
-                  <img class="project_photo img-responsive" src="assets/projects/restroom/restroom.jpg" height="auto" width="100%" alt="project">
-                 
-                   </div>
-                  <div class="col-md-7">
-                  <div>
-                  <h1 class="project_h1">Public Restroom Redesign</h1>
-                	<p class="justify-text">
-                  Human Factors involves the study of factors and the development of tools that facilitate 
-                  the goals of enhancing performance, increasing safety, and augmenting user satisfaction.
-                  </p> 
-                  <p class="justify-text">
-                  The objective of this project was to find and fix something that involves 
-                  real-world human factors problems.
-                  </p> 
-                  </div>
-                 
-                </div>
-              </div>
-				  <hr>
-              <div class="row">
-                <div class="col-md-5">
-               
-                  <h2>Project Overview</h2>
-                    <p>
-                    <strong>Course Title:</strong> Human Factors<br>
-                    <strong>Term:</strong> Fall 2011<br>
-                    <strong>Project Type:</strong> Individual<br>
-                    <strong>Duration</strong>: 13 weeks<br>
-                    <strong>Methods</strong>: think-alouds, task analysis<br>
-                    </p>      
-               
-                </div>
-                 
-               
-                 
-                <div class="col-md-7">
-                <h2>Why Public Restrooms?</h2>
-              <p>
-              Researchers have found that 15% of the American population routinely fails to wash their hands 
-              after using a public restroom.  Another 30% of the population avoids public restrooms completely.
-              </p>
-              <p>
-              Health consequences are thought to arise from two distinct sources: 
-              (1) bacterial/viral infections acquired through contact with unsanitary fixtures, and 
-              (2) feelings of anxiety, fear, and/or disgust associated with the use of public restrooms.  
-              In fact, the latter has been linked to other health conditions such as urinary infections and social isolation.
-              </p>
-                </div>
-              </div>
-
-              <hr>
-              	
-
-              <div class="row">
-              <div class="col-md-12">
-              <h2>Task Analysis</h2>
-              <p> The following steps reflect one correct way to perform the hand washing task in the evaluated setting. </p>
-              <ol>
-              <li><p><strong>Ensure paper towel is accessible</strong></p></li>
-              <li><p><strong>Set up washing environment</strong></p></li>
-                  <ol>
-                  <li><p>Find an available sink</p></li>
-                  <li><p>Turn on water</p></li>
-                  <li><p>Test and adjust water temperature</p></li>
-                  </ol>
-              <li><p><strong>Wash hands</strong></p></li>
-                  <ol>
-                  <li><p>Briefly place hands under running water</p></li>
-                  <li><p>Dispense soap</p></li>
-                  <li><p>Rub hands together for ≥ 20 seconds</p></li>
-                    <ol>
-                    <li><p>Wash palms, between fingers, back of hands, base of thumbs, back of fingers, under fingernails, and wrists</p></li>
-                    </ol>
-                  <li><p>Rinse hands with water</p></li>
-                  </ol>
-              <li><p><strong>Dry hands with paper towel</strong></p></li>
-              <li><p><strong>Turn off water faucet using paper towel</strong></p></li>
-              <li><p><strong>Exit restroom</strong></p></li>
-                    <ol>
-                    <li><p>Pull door handle using paper towel</p></li>
-                    <li><p>Discard paper towel in an appropriate waste receptacle outside</p></li>
-                    </ol>
-              </ol>
-              </div>
-              </div>
-
-              <hr>
-              <div class="row">
-              <div class="col-md-12">
-              <h2>User Study</h2>
-              <p>Think-aloud studies with three female participants were conducted to witness performance of 
-              the hand washing task and identify possible sources of task execution errors, mistakes, and inefficiencies.</p>
-              </div>
-              </div>
-		
-              <div class="row">
-              <div class="col-md-6">
-              
-              <h4>User Errors</h4>
-              <ul>
-              <li><p>Not following the procedure outlined by the CDC</p></li>
-              <li><p>Becoming re-contaminated after washing</p></li>
-              <li><p>Cross-contaminating clothing and belongings</p></li>
-              <li><p>Not dispensing enough soap</p></li>
-              </ul>
-              </div>
-              <div class="col-md-6">
-              <h4>Maintenance Issues</h4>
-              <ul>
-              <li><p>Broken faucet handle</p></li>
-              <li><p>Damaged paper towel dispenser</p></li>
-              </ul>    
-            </div>
-          </div>
-          
-          <div class="row">
-              <div class="col-md-6">
-              
-              <h4>Design Oversights</h4>
-              <ul>
-              <li><p>Lid on the trash receptacle</p></li>
-              <li><p>Location of the trash receptacle</p></li>
-              </ul>
-              </div>
-              <div class="col-md-6">
-              <h4>Inefficiencies</h4>
-              <ul>
-              <li><p>Users must dispense paper towel prior to hand washing</p></li>
-              <li><p>Multiple steps are required to adjust the water temperature</p></li>
-              </ul>    
-            </div>
-          </div>
-            
-            <hr>
-            
-            <div class="row">
-            <div class="col-md-12">
-            <h2>Redesign</h2>
-            </div>
-            </div>
-            
-            
-            <div class="row">
-            <div class="col-md-3">
-            <img class="img-responsive img-right vertical-center" src="assets/projects/restroom/redesign.png" height="auto" width="100%" alt="">
-            </div>
-            
-            <div class="col-md-3">
-            <img class="img-responsive img-left" src="assets/projects/restroom/redesign2.png" height="auto" width="100%" alt="">
-
-            </div>
-            <div class="col-md-6">
-            <h4>Amenities</h4>
-            <ol>
-            <li><p>Sinks with foot pedals</p></li>
-            <li><p>Automatic soap dispensers</p></li>
-            <li><p>Lights that remain illuminated for the recommended duration of hand washing (activated by dispensing soap)</p></li>
-            <li><p>Displays that outline the correct hand washing procedure</p></li>
-            <li><p>Automatic paper towel dispenser</p></li>
-            <li><p>Automatic exit door</p></li>
-            </ol>
-            </div>
-           
-            </div>
-
-            
-            <div class="prev_next_links clearfix">
-            <div class="fleft">
-               <a rel="previous" href="project2.html"><i class="fa fa-chevron-left"></i> Radiology Tutor</a>
-            </div>
-
-							
-				
-          </div>
-          
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Redesign</h2>
         </div>
-            	
-
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Amenities</h3>
+          <ol>
+            <li>
+              <p>Sinks with foot pedals</p>
+            </li>
+            <li>
+              <p>Automatic soap dispensers</p>
+            </li>
+            <li>
+              <p>Lights that remain illuminated for the recommended duration of hand washing (activated by dispensing soap)</p>
+            </li>
+            <li>
+              <p>Displays that outline the correct hand washing procedure</p>
+            </li>
+            <li>
+              <p>Automatic paper towel dispenser</p>
+            </li>
+            <li>
+              <p>Automatic exit door</p>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-3">
+          <img class="img-responsive img-right vertical-center" src="assets/projects/restroom/redesign.png" height="auto"
+          width="100%" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-responsive img-left" src="assets/projects/restroom/redesign2.png" height="auto" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- More Projects -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="more_projects" class="section_heading">More Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="project3.html">
+          <img class="img-responsive img-center" src="assets/projects/classroom/que.png" height="100%" width="100%" alt="" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="project4.html">
+          <img class="img-responsive" src="assets/projects/glucose/designing_for_better_health.jpg" height="100%" width="100%"
+          alt="" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="project2.html">
+          <img class="img-responsive" src="assets/projects/tutor/cognitive.png" height="100%" width="100%" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="text_center">Classroom Discussion Application</h5>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text_center">Glucose Control System</h5>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text_center">Intelligent Radiology Tutor</h5>
+      </div>
+    </div>
     <!-- Footer -->
     <div id="copyright">
-        <p>@2017 by Aubrey Henderson. All rights reserved.</p>  
+      <p>@2017 by Aubrey Henderson. All rights reserved.</p>
     </div>
-    </div><!-- end container -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script src="https://unpkg.com/popper.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/animatedModal.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-	</body>
-	
+  </div>
+  <!-- end container -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.2.1.min.js"></script> 
+  <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+   
+  <script src="https://unpkg.com/popper.js"></script> 
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+  <script src="js/smooth-scroll.js"></script> 
+  <script src="js/animatedModal.js"></script> 
+  <script src="js/wow.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/index.js"></script></body>
 </html>

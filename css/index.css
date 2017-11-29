@@ -455,19 +455,6 @@ h6 {
   font-family: Palatino;
   font-size: 14px;
 }
-/* Projects */
-#project_page {
-  background-color: #FFFFFF;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.project_photo {
-  margin-top: 25px;
-}
-.project_h1 {
-  margin-bottom: 15px;
-}
 /* xs (for phones - screens less than 768px wide) */
 @media screen and (max-width: 767px) and (min-width: 0px) {
   #for_testing {
