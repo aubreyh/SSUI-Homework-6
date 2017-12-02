@@ -1,58 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Aubrey Henderson</title>
-    <!-- CSS -->
-    <link href="css/normalize.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
-    <link href="css/project.css" rel="stylesheet" />
-  </head>
+{% include "project_head.html" %}
   <body>
     <!--<div id="for_testing"></div>-->
   <!-- Header -->
   <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <a class="main_a" href="index.html">
-          <span id="logo">Aubrey Henderson</span>
-          <br />
-          <span id="role">UX Designer &amp; Researcher</span>
-        </a>
-      </div>
-      <div class="col-6 d-none d-lg-block">
-        <ul id="main_ul">
-          <li>
-            <a class="main_a" href="index.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="main_a" href="index.html#skills">Skills</a>
-          </li>
-          <li>
-            <a class="main_a" href="index.html#about">About</a>
-          </li>
-          <li>
-            <a class="main_a" href="index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
-        <a id="modal" href="#animatedModal" onclick="displayModal();" class="icon"></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 d-none d-lg-block">
-        <hr id="main_hr" />
-      </div>
-    </div>
+    {% include "project_header.html" %}
     <div id="main_page">
       <div class="row">
         <div class="col-md-5">
-          <img class="project_photo img-responsive" src="assets/images/projects/preview/restroom.jpg" height="auto" width="85%"
+          <img class="project_photo img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/restroom.jpg') }}" height="auto" width="85%"
           alt="project" />
         </div>
         <div class="col-md-7">
@@ -266,13 +223,12 @@
         <div class="col-md-6"> 
           <div class="row">
             <div class="col-md-12">
-              <img class="img-responsive img-right vertical-center" src="assets/images/projects/restroom/redesign2.png" height="auto"
-              width="73%" alt="" />
+              <img class="img-responsive img-right vertical-center" src="{{ url_for('static', filename='assets/images/projects/restroom/redesign2.png') }}" height="auto" width="100%" alt="" />
             </div>
             </div>
             <div class="row">
             <div class="col-md-12">
-              <img class="img-responsive img-left" src="assets/images/projects/restroom/redesign.png" height="auto" width="73%" alt="" />
+              <img class="img-responsive img-left" src="{{ url_for('static', filename='assets/images/projects/restroom/redesign.png') }}" height="auto" width="100%" alt="" />
             </div>
            </div>
       </div>
@@ -284,34 +240,41 @@
         <h2 id="more_projects" class="section_heading">More Projects</h2>
       </div>
     </div>
+    <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <a href="project3.html">
-          <img class="img-responsive img-center" src="assets/images/projects/preview/que.png" height="100%" width="100%" alt="" />
+        <div>
+        <a href="{{ url_for('project_3') }}">
+          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/preview/que.png') }}" height="100%" width="100%" alt="" />
         </a>
+        </div>
+        <div>
+        <h5 class="text_center">Classroom Discussion Application</h5>
+        </div>
       </div>
       <div class="col-md-4">
-        <a href="project4.html">
-          <img class="img-responsive" src="assets/images/projects/preview/glucose.png" height="100%" width="100%"
+        <div>
+        <a href="{{ url_for('project_4') }}">
+          <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/glucose.png') }}" height="100%" width="100%"
           alt="" />
         </a>
+        </div>
+        <div>
+          <h5 class="text_center">Glucose Control System</h5>
+        </div>
       </div>
       <div class="col-md-4">
-        <a href="project2.html">
-          <img class="img-responsive" src="assets/images/projects/preview/cognitive.jpg" height="100%" width="100%" alt="" />
+        <div>
+        <a href="{{ url_for('project_2') }}">
+          <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/cognitive.jpg') }}" height="100%" width="100%" alt="" />
         </a>
+        </div>
+        <div>
+          <h5 class="text_center">Intelligent Radiology Tutor</h5>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <h5 class="text_center">Classroom Discussion Application</h5>
-      </div>
-      <div class="col-md-4">
-        <h5 class="text_center">Glucose Control System</h5>
-      </div>
-      <div class="col-md-4">
-        <h5 class="text_center">Intelligent Radiology Tutor</h5>
-      </div>
+
     </div>
     <!-- Footer -->
     <div id="copyright">
@@ -319,16 +282,6 @@
     </div>
   </div>
   <!-- end container -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-3.2.1.min.js"></script> 
-  <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-   
-  <script src="https://unpkg.com/popper.js"></script> 
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-   
-  <script src="js/smooth-scroll.js"></script> 
-  <script src="js/animatedModal.js"></script> 
-  <script src="js/wow.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
-  <script src="js/index.js"></script></body>
+  {% include "scripts.html" %}
+  </body>
 </html>

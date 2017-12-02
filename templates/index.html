@@ -9,67 +9,20 @@
     <title>Aubrey Henderson</title>
 
     <!-- CSS -->
-    <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    
   </head>
   
   <body id="main">
     <div id="for_testing"></div>
+        
     <!-- Header -->
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <a class="main_a" href="index.html">
-            <span id="logo">Aubrey Henderson</span>
-            <br>
-            <span id="role">UX Designer & Researcher</span>
-          </a>
-        </div>
-        <div class="col-6 d-none d-lg-block">
-          <ul id="main_ul">
-            <li><a class="main_a" href="">Portfolio</a></li>
-            <li><a class="main_a" data-scroll href="#skills">Skills</a></li>
-            <li><a class="main_a" data-scroll href="#about">About</a></li>
-            <li><a class="main_a" data-scroll href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
-          <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
-              <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 d-none d-lg-block">
-          <hr id="main_hr" />
-        </div>
-      </div>
- 
-    <!-- menu modal -->
-    <div id="animatedModal">
-      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
-        <div class="modal-content">
-          
-        <div id="modal_row" class="row">
-          <div id="modal_ul" class="col-12">
-            <ul>
-              <li><a class="modal_a" onClick="closeModal();" href="#main">Portfolio</a></li>
-              <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#skills">Skills</a></li>
-              <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#about">About</a></li>
-              <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div> 
-      </div> <!-- end modal-content -->
-    </div>
-        
+    {% include "header.html" %}      
 
     <!-- Portfolio -->
     <div id="main_page">
@@ -77,64 +30,64 @@
         <div class="masonry">
         
           <div class="portfolio_image">
-            <a href="project6.html">
-              <img class="item" src="assets/images/portfolio/breakfast_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/breakfast.png'" onmouseout="this.src='assets/images/portfolio/breakfast_bw.png'"/>
+            <a href="{{ url_for('project_6') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/breakfast_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/breakfast.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/breakfast_bw.png') }}'"/>
             </a>
             <div class="overlay">Breakfast Delivery Service</div>
           </div>
 
           <div class="portfolio_image">
-            <a href="project9.html">
-              <img class="item" src="assets/images/portfolio/muddy_paws_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/muddy_paws.png'" onmouseout="this.src='assets/images/portfolio/muddy_paws_bw.png'" />
+            <a href="{{ url_for('project_9') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/muddy_paws_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/muddy_paws.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/muddy_paws_bw.png') }}'"/>
             </a>           
            <div class="overlay">Client-Focused Web Design</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project3.html">
-              <img class="item" src="assets/images/portfolio/que_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/que.png'" onmouseout="this.src='assets/images/portfolio/que_bw.png'" />
+            <a href="{{ url_for('project_3') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/que_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/que.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/que_bw.png') }}'"/>
             </a>
             <div class="overlay">Classroom Discussion Application</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project2.html">
-              <img class="item mobile_hidden" src="assets/images/portfolio/cognitive_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/cognitive.png'" onmouseout="this.src='assets/images/portfolio/cognitive_bw.png'" />
+            <a href="{{ url_for('project_2') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/cognitive_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/cognitive.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/cognitive_bw.png') }}'"/>
             </a>
             <div class="overlay">Intelligent Radiology Tutor</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project1.html">
-              <img class="item mobile_hidden" src="assets/images/portfolio/restroom_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/restroom.png'" onmouseout="this.src='assets/images/portfolio/restroom_bw.png'" />      
+            <a href="{{ url_for('project_1') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/restroom_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/restroom.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/restroom_bw.png') }}'"/>
             </a>
             <div class="overlay">Public Restroom Redesign</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project7.html">
-              <img class="item" src="assets/images/portfolio/cura_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/cura.png'" onmouseout="this.src='assets/images/portfolio/cura_bw.png'" />
+            <a href="{{ url_for('project_7') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/cura_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/cura.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/cura_bw.png') }}'"/>
             </a>
             <div class="overlay">Health Management System</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project8.html">
-              <img class="item" src="assets/images/portfolio/dashboard_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/dashboard.png'" onmouseout="this.src='assets/images/portfolio/dashboard_bw.png'" />
+            <a href="{{ url_for('project_8') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/dashboard_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/dashboard.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/dashboard_bw.png') }}'"/>
             </a>
             <div class="overlay">Ecological Dashboard</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project5.html">
-              <img class="item" src="assets/images/portfolio/ucre_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/ucre.png'" onmouseout="this.src='assets/images/portfolio/ucre_bw.png'" />
+            <a href="{{ url_for('project_5') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/ucre_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/ucre.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/ucre_bw.png') }}'"/>
             </a>
             <div class="overlay">Programmer-Centered Research</div>
           </div>
           
           <div class="portfolio_image">
-            <a href="project4.html">
-              <img class="item mobile_hidden" src="assets/images/portfolio/glucose_bw.png" alt="project" onmouseover="this.src='assets/images/portfolio/glucose.png'" onmouseout="this.src='assets/images/portfolio/glucose_bw.png'" /> 
+            <a href="{{ url_for('project_4') }}">
+             <img class="item" src="{{ url_for('static', filename='assets/images/portfolio/glucose_bw.png') }}" alt="project" onmouseover="this.src='{{ url_for('static', filename='assets/images/portfolio/glucose.png') }}'" onmouseout="this.src='{{ url_for('static', filename='assets/images/portfolio/glucose_bw.png') }}'"/>
             </a>
             <div class="overlay">Glucose Control System</div>
           </div>      
@@ -142,9 +95,9 @@
         <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
       </section><!-- end portfolio section -->
 
-      <!-- Technical Skills -->
+      <!-- Skills -->
       <section id="skills" class="section">
-	    <h1 class="section-title">Technical Skills</h1>
+	    <h1 class="section-title">Skills</h1>
         <div class="row skills wow fadeInLeft" data-wow-duration="2s">
 		  <div class="col-md-3 text-center">
             <a href="#skills" class="icon">
@@ -306,7 +259,7 @@
             <h1 class="section-title">About</h1>
               <div class="banner"></div>
               <div id="card">
-                <div id="my_photo_container" class="wow fadeInLeft" data-wow-duration="1.5s"><img id="my_photo" src="assets/images/my_photo.jpg" alt="photo"></div>
+                <div id="my_photo_container" class="wow fadeInLeft" data-wow-duration="1.5s"><img id="my_photo" src="{{ url_for('static', filename='assets/images/my_photo.jpg') }}" alt="photo"></div>
                 <div id="card_half" class="wow fadeInRight" data-wow-duration="1s">
                   <div id="card_text">
                     <h4>Aubrey Henderson</h4>
@@ -399,15 +352,6 @@
         <p>@2017 by Aubrey Henderson. All rights reserved.</p>  
     </div>
     </div><!-- end container -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-    <script src="https://unpkg.com/popper.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/animatedModal.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    {% include "scripts.html" %}
   </body>
 </html>
