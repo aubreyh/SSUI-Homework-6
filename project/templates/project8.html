@@ -1,36 +1,34 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  {% include "project_head.html" %}
-  <body>
-    <!--<div id="for_testing"></div>-->
+  <body>{% include "project_head.html" %} 
+  <!--<div id="for_testing"></div>-->
+   
   <!-- Header -->
-  <div class="container">
-    {% include "project_header.html" %}
-    <div id="main_page">
-      <div class="row">
-        <div class="col-md-5">
-          <img class="project_photo img-responsive wow fadeIn" data-wow-duration="2s" src="{{ url_for('static', filename='assets/images/projects/preview/dashboard.png') }}" height="auto" width="85%"
-          alt="Ecological Dashboard project" />
-        </div>
-        <div class="col-md-7">
-          <div>
-            <h1>Ecological Dashboard</h1>
-            <h2>Coming soon!</h2>
-          </div>
+  <div class="container">{% include "project_header.html" %}
+  <div id="main_page">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="project_photo img-responsive wow fadeIn" data-wow-duration="2s"
+        src="{{ url_for('static', filename='assets/images/projects/preview/dashboard.png') }}" height="auto"
+        width="85%" alt="Ecological Dashboard project" />
+      </div>
+      <div class="col-md-7">
+        <div>
+          <h1>Ecological Dashboard</h1>
+          <h2>Coming soon!</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5">
-          <hr id="project_hr" />
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <hr id="project_hr" />
       </div>
-
+    </div>
     <!-- Footer -->
     <div id="copyright">
       <p>@2017 by Aubrey Henderson. All rights reserved.</p>
     </div>
   </div>
   <!-- end container -->
-  {% include "scripts.html" %}
-  </body>
+  {% include "scripts.html" %}</div></body>
 </html>

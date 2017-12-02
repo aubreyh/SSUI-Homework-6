@@ -1,211 +1,241 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  {% include "project_head.html" %}
-  <body>
+  <body>{% include "project_head.html" %}
   <div id="for_testing"></div>
   <!-- Header -->
-  <div class="container">
-    {% include "project_header.html" %}
-    <div id="main_page">
-      <div class="row">
-        <div class="col-md-5">
-          <div>
-            <img class="project_photo img-responsive wow fadeIn" data-wow-duration="2s" src="{{ url_for('static', filename='assets/images/projects/preview/que.png') }}" height="auto" width="75%"
-            alt="Classroom Discussion Application project" />
-          </div>
-        </div>
-        <div class="col-md-7">
-          <h1 class="center-text">Classroom Discussion Application</h1>
-          <div>
-            <p class="justify-text">This project explored how the ubiquity of mobile technology might be leveraged to (1) support
-            the processes of teaching and learning, and (2) allow users to acquire knowledge and skills in ways currently
-            unmet.</p>
-          </div>
+  <div class="container">{% include "project_header.html" %}
+  <div id="main_page">
+    <div class="row">
+      <div class="col-md-5">
+        <div>
+          <img class="project_photo img-responsive wow fadeIn" data-wow-duration="2s"
+          src="{{ url_for('static', filename='assets/images/projects/preview/que.png') }}" height="auto"
+          width="75%" alt="Classroom Discussion Application project" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5">
-          <hr id="project_hr" />
+      <div class="col-md-7">
+        <h1 class="center-text">Classroom Discussion Application</h1>
+        <div>
+          <p class="justify-text">This project explored how the ubiquity of mobile technology might be leveraged to (1) support the
+          processes of teaching and learning, and (2) allow users to acquire knowledge and skills in ways currently unmet.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5">
-          <h2>Project Overview</h2>
-          <p>
-          <strong>Course Title:</strong> Introduction to Human-Computer Interaction Design
-          <br />
-          <strong>Project Type:</strong> Team
-          <br />
-          <strong>Duration</strong>: 8 weeks
-          <br />
-          <strong>Methods</strong>: observations, storyboards, prototypes, heuristic evaluation, usability testing, A/B testing,
-          statistical analysis
-          <br /></p>
-        </div>
-        <div class="col-md-7">
-          <h2>Ideation</h2>
-          <p>Classroom observations and interviews with students revealed several unaddressed needs.</p>
-          <ul>
-            <li>
-              <p>Asking questions in class without feeling self-conscious (students)</p>
-            </li>
-            <li>
-              <p>Noticing when students have questions (instructors)</p>
-            </li>
-            <li>
-              <p>Ensuring pertinent questions are given higher priority than the rest (students and instructors)</p>
-            </li>
-          </ul>
-          <p>To address these needs, we created an academic question and answer community for mobile devices. This application
-          allows users to submit questions anonymously, increase the popularity of questions that they consider important, and
-          easily differentiate among questions that have been addressed from those that remain unanswered.</p>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <hr id="project_hr" />
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">Storyboards</h2>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <h2>Project Overview</h2>
+        <p>
+        <strong>Course Title:</strong> Introduction to Human-Computer Interaction Design
+        <br />
+        <strong>Project Type:</strong> Team
+        <br />
+        <strong>Duration</strong>: 8 weeks
+        <br />
+        <strong>Methods</strong>: observations, storyboards, prototypes, heuristic evaluation, usability testing, A/B testing,
+        statistical analysis
+        <br /></p>
       </div>
-      <div class="row">
-        <div class="col-md-9">
-          <p>Creating storyboards required us to explicitly communicate the usage scenario, our intended user population, users’
-          motivations for engaging with the interface, and what users must be able to accomplish with our application. To the right
-          are sample panels from our storyboard for this concept.</p>
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/storyboard.png') }}" height="auto" width="75%" alt="Storyboard" />
-        </div>
+      <div class="col-md-7">
+        <h2>Ideation</h2>
+        <p>Classroom observations and interviews with students revealed several unaddressed needs.</p>
+        <ul>
+          <li>
+            <p>Asking questions in class without feeling self-conscious (students)</p>
+          </li>
+          <li>
+            <p>Noticing when students have questions (instructors)</p>
+          </li>
+          <li>
+            <p>Ensuring pertinent questions are given higher priority than the rest (students and instructors)</p>
+          </li>
+        </ul>
+        <p>To address these needs, we created an academic question and answer community for mobile devices. This application allows
+        users to submit questions anonymously, increase the popularity of questions that they consider important, and easily
+        differentiate among questions that have been addressed from those that remain unanswered.</p>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">Paper Prototypes</h2>
-          <p>Paper prototypes allow designers to concretely display UI elements without investing the time required to create
-          digital mock-ups. Thus, initially implementing two distinct ideas in the form of paper prototypes enabled us to focus
-          primarily on the concept of our design. (The following images are of Prototype 1).</p>
-        </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">Storyboards</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/1.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/2.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/3.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/4.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <p>Creating storyboards required us to explicitly communicate the usage scenario, our intended user population, users’
+        motivations for engaging with the interface, and what users must be able to accomplish with our application. To the right
+        are sample panels from our storyboard for this concept.</p>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/5.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/6.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/7.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/8.png') }}" height="auto" width="75%" alt="Mobile app prototype" />
-        </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/storyboard.png') }}"
+        height="auto" width="75%" alt="Storyboard" />
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">Functional Prototype</h2>
-          <p>We incorporated valuable feedback obtained during heuristic evaluation of our paper prototypes into a functional
-          implementation of our system. While early designs focused on the usability of the interface for submitting questions,
-          later iterations also refined the comments page.</p>
-          
-        </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">Paper Prototypes</h2>
+        <p>Paper prototypes allow designers to concretely display UI elements without investing the time required to create digital
+        mock-ups. Thus, initially implementing two distinct ideas in the form of paper prototypes enabled us to focus primarily on
+        the concept of our design. (The following images are of Prototype 1).</p>
       </div>
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/functional_prototype.png') }}" width="100%" alt="Functional prototype" />
-        </div>
-        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/1.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">User Testing</h2>
-          <p>After implementing several significant changes based on the results of in-person user studies, we subsequently
-          conducted online A/B testing using Optimizely. Measurements reflecting the number of users who added a question, the
-          number of duplicate questions, and the time it took users to submit a question were collected and analyzed. Ultimately,
-          we elected to include both alternatives (A and B) as options for adding new questions to the interface of the final
-          application.</p>
-        </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/2.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/version_a.png') }}" height="auto" width="40%" alt="Version A for A/B testing" />
-          <h4 class="text_center">
-            <strong>Version A</strong>
-          </h4>
-        </div>
-        <div class="col-md-5">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/version_b.png') }}" height="auto" width="40%" alt="Version B for A/B testing" />
-          <h4 class="text_center">
-            <strong>Version B</strong>
-          </h4>
-        </div>
-        <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/3.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">Competitive Analysis</h2>
-        </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/4.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/ca_table.png') }}" height="auto" width="100%" alt="Competitive Analysis" />
-        </div>
-        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/5.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section_heading">Final Product</h2>
-        </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/6.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/final_app1.png') }}" height="auto" width="60%" alt="Final app screen" />
-          <h4 class="text_center">
-            <strong>Select a class</strong>
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/final_app2.png') }}" height="auto" width="60%" alt="Final app screen" />
-          <h4 class="text_center">
-            <strong>View questions</strong>
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/final_app3.png') }}" height="auto" width="60%" alt="Final app screen" />
-          <h4 class="text_center">
-            <strong>Add a question</strong>
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/classroom/final_app4.png') }}" height="auto" width="60%" alt="Final app screen" />
-          <h4 class="text_center">
-            <strong>Discuss</strong>
-          </h4>
-        </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/7.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
       </div>
-      <hr />
-      <!-- More Projects -->
-       <div class="container">
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/8.png') }}" height="auto"
+        width="75%" alt="Mobile app prototype" />
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">Functional Prototype</h2>
+        <p>We incorporated valuable feedback obtained during heuristic evaluation of our paper prototypes into a functional
+        implementation of our system. While early designs focused on the usability of the interface for submitting questions, later
+        iterations also refined the comments page.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/functional_prototype.png') }}"
+        width="100%" alt="Functional prototype" />
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">User Testing</h2>
+        <p>After implementing several significant changes based on the results of in-person user studies, we subsequently conducted
+        online A/B testing using Optimizely. Measurements reflecting the number of users who added a question, the number of
+        duplicate questions, and the time it took users to submit a question were collected and analyzed. Ultimately, we elected to
+        include both alternatives (A and B) as options for adding new questions to the interface of the final application.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/version_a.png') }}"
+        height="auto" width="40%" alt="Version A for A/B testing" />
+        <h4 class="text_center">
+          <strong>Version A</strong>
+        </h4>
+      </div>
+      <div class="col-md-5">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/version_b.png') }}"
+        height="auto" width="40%" alt="Version B for A/B testing" />
+        <h4 class="text_center">
+          <strong>Version B</strong>
+        </h4>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">Competitive Analysis</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/ca_table.png') }}" height="auto"
+        width="100%" alt="Competitive Analysis" />
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section_heading">Final Product</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/final_app1.png') }}"
+        height="auto" width="60%" alt="Final app screen" />
+        <h4 class="text_center">
+          <strong>Select a class</strong>
+        </h4>
+      </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/final_app2.png') }}"
+        height="auto" width="60%" alt="Final app screen" />
+        <h4 class="text_center">
+          <strong>View questions</strong>
+        </h4>
+      </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/final_app3.png') }}"
+        height="auto" width="60%" alt="Final app screen" />
+        <h4 class="text_center">
+          <strong>Add a question</strong>
+        </h4>
+      </div>
+      <div class="col-md-3">
+        <img class="img-responsive img-center"
+        src="{{ url_for('static', filename='assets/images/projects/classroom/final_app4.png') }}"
+        height="auto" width="60%" alt="Final app screen" />
+        <h4 class="text_center">
+          <strong>Discuss</strong>
+        </h4>
+      </div>
+    </div>
+    <hr />
+    <!-- More Projects -->
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h2 id="more_projects" class="section_heading">More Projects</h2>
@@ -213,46 +243,48 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-        <div>
-          <a href="{{ url_for('project_1') }}">
-            <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/restroom.jpg') }}" height="100%" width="100%" alt="Public Restroom Redesign project" />
-          </a>
+          <div>
+            <a href="{{ url_for('project_1') }}">
+              <img class="img-responsive"
+              src="{{ url_for('static', filename='assets/images/projects/preview/restroom.jpg') }}"
+              height="100%" width="100%" alt="Public Restroom Redesign project" />
+            </a>
           </div>
-                  <div>
-          <h5 class="text_center">Public Restroom Redesign</h5>
-        </div>
+          <div>
+            <h5 class="text_center">Public Restroom Redesign</h5>
+          </div>
         </div>
         <div class="col-md-4">
-        <div>
-          <a href="{{ url_for('project_5') }}">
-          
-            <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/ucre.jpg') }}" height="100%" width="100%" alt="Programmer-Centered Research project" />
-          </a>
+          <div>
+            <a href="{{ url_for('project_5') }}">
+              <img class="img-responsive"
+              src="{{ url_for('static', filename='assets/images/projects/preview/ucre.jpg') }}" height="100%"
+              width="100%" alt="Programmer-Centered Research project" />
+            </a>
           </div>
-                  <div>
-          <h5 class="text_center">Programmer-Centered Research</h5>
-        </div>
+          <div>
+            <h5 class="text_center">Programmer-Centered Research</h5>
+          </div>
         </div>
         <div class="col-md-4">
-        <div>
-          <a href="{{ url_for('project_6') }}">
-            <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/breakfast.png') }}" height="100%" width="100%" alt="Breakfast Delivery Service project" />
-          </a>
+          <div>
+            <a href="{{ url_for('project_6') }}">
+              <img class="img-responsive"
+              src="{{ url_for('static', filename='assets/images/projects/preview/breakfast.png') }}"
+              height="100%" width="100%" alt="Breakfast Delivery Service project" />
+            </a>
           </div>
-                  <div>
-          <h5 class="text_center">Breakfast Delivery Service</h5>
+          <div>
+            <h5 class="text_center">Breakfast Delivery Service</h5>
+          </div>
         </div>
-        </div>
-      </div>
-      </div>
-
-      <!-- Footer -->
-      <div id="copyright">
-        <p>@2017 by Aubrey Henderson. All rights reserved.</p>
       </div>
     </div>
-  </div>
+    <!-- Footer -->
+    <div id="copyright">
+      <p>@2017 by Aubrey Henderson. All rights reserved.</p>
+    </div>
+  </div></div>
   <!-- end container -->
-  {% include "scripts.html" %}
-  </body>
+  {% include "scripts.html" %}</body>
 </html>

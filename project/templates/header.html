@@ -1,33 +1,32 @@
-
-      <div class="row">
-        <div class="col-6">
-          <a class="main_a" href="{{ url_for('home') }}">
-            <span id="logo">Aubrey Henderson</span>
-            <br>
-            <span id="role">UX Designer & Researcher</span>
-          </a>
-        </div>
-        <div class="col-6 d-none d-lg-block">
-          <ul id="main_ul">
-            <li><a class="main_a" href="{{ url_for('home') }}">Portfolio</a></li>
-            <li><a class="main_a" data-scroll href="#skills">Skills</a></li>
-            <li><a class="main_a" data-scroll href="#about">About</a></li>
-            <li><a class="main_a" data-scroll href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
-          <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
-              <i class="fa fa-bars"></i>
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-6">
+        <a class="main_a" href="{{ url_for('home') }}">
+          <span id="logo">Aubrey Henderson</span>
+          <br>
+          <span id="role">UX Designer & Researcher</span>
+        </a>
       </div>
-      <div class="row">
-        <div class="col-12 d-none d-lg-block">
-          <hr id="main_hr" />
-        </div>
+      <div class="col-6 d-none d-lg-block">
+        <ul id="main_ul">
+          <li><a class="main_a" href="{{ url_for('home') }}">Portfolio</a></li>
+          <li><a class="main_a" data-scroll href="#skills">Skills</a></li>
+          <li><a class="main_a" data-scroll href="#about">About</a></li>
+          <li><a class="main_a" data-scroll href="#contact">Contact</a></li>
+        </ul>
       </div>
+      <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
+        <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-none d-lg-block">
+        <hr id="main_hr" />
+      </div>
+    </div>
       
-          <!-- menu modal -->
+    <!-- menu modal -->
     <div id="animatedModal">
       <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
       <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
@@ -46,6 +45,6 @@
             </ul>
           </div>
         </div> 
-      </div> <!-- end modal-content -->
-    </div>
+      </div> 
+    </div> <!-- end animatedModal -->
  
