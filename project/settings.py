@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 
 REPO_NAME = "SSUI-Homework-6"  # Used for FREEZER_BASE_URL
