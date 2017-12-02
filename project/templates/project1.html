@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+{% include "project_head.html" %}
+  <body>
+    <!--<div id="for_testing"></div>-->
+  <!-- Header -->
+  <div class="container">
+    {% include "project_header.html" %}
+    <div id="main_page">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="project_photo img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/restroom.jpg') }}" height="auto" width="85%"
+          alt="project" />
+        </div>
+        <div class="col-md-7">
+          <div>
+            <h1>Public Restroom Redesign</h1>
+            <p class="justify-text">Human Factors involves the study of factors and the development of tools that facilitate the
+            goals of enhancing performance, increasing safety, and augmenting user satisfaction.</p>
+            <p class="justify-text">The objective of this project was to find and fix something that involves real-world human
+            factors problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <hr id="project_hr" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Project Overview</h2>
+          <p>
+          <strong>Course Title:</strong> Human Factors
+          <br />
+          <strong>Project Type:</strong> Individual
+          <br />
+          <strong>Duration</strong>: 13 weeks
+          <br />
+          <strong>Methods</strong>: think-alouds, task analysis
+          <br /></p>
+        </div>
+        <div class="col-md-7">
+          <h2>Why Public Restrooms?</h2>
+          <p>Researchers have found that 15% of the American population routinely fails to wash their hands after using a public
+          restroom. Another 30% of the population avoids public restrooms completely.</p>
+          <p>Health consequences are thought to arise from two distinct sources: (1) bacterial/viral infections acquired through
+          contact with unsanitary fixtures, and (2) feelings of anxiety, fear, and/or disgust associated with the use of public
+          restrooms. In fact, the latter has been linked to other health conditions such as urinary infections and social
+          isolation.</p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Task Analysis</h2>
+          <p>The following steps reflect one correct way to perform the hand washing task in the evaluated setting.</p>
+          <ol>
+            <li>
+              <p>
+                <strong>Ensure paper towel is accessible</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Set up washing environment</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Find an available sink</p>
+                </li>
+                <li>
+                  <p>Turn on water</p>
+                </li>
+                <li>
+                  <p>Test and adjust water temperature</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p>
+                <strong>Wash hands</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Briefly place hands under running water</p>
+                </li>
+                <li>
+                  <p>Dispense soap</p>
+                </li>
+                <li>
+                  <p>Rub hands together for ≥ 20 seconds</p>
+                  <ol>
+                    <li>
+                      <p>Wash palms, between fingers, back of hands, base of thumbs, back of fingers, under fingernails, and
+                      wrists</p>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <p>Rinse hands with water</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p>
+                <strong>Dry hands with paper towel</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Turn off water faucet using paper towel</strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Exit restroom</strong>
+              </p>
+              <ol>
+                <li>
+                  <p>Pull door handle using paper towel</p>
+                </li>
+                <li>
+                  <p>Discard paper towel in an appropriate waste receptacle outside</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">User Study</h2>
+          <p>Think-aloud studies with three female participants were conducted to witness performance of the hand washing task and
+          identify possible sources of task execution errors, mistakes, and inefficiencies.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>User Errors</h3>
+          <ul>
+            <li>
+              <p>Not following the procedure outlined by the CDC</p>
+            </li>
+            <li>
+              <p>Becoming re-contaminated after washing</p>
+            </li>
+            <li>
+              <p>Cross-contaminating clothing and belongings</p>
+            </li>
+            <li>
+              <p>Not dispensing enough soap</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Maintenance Issues</h3>
+          <ul>
+            <li>
+              <p>Broken faucet handle</p>
+            </li>
+            <li>
+              <p>Damaged paper towel dispenser</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Design Oversights</h3>
+          <ul>
+            <li>
+              <p>Lid on the trash receptacle</p>
+            </li>
+            <li>
+              <p>Location of the trash receptacle</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Inefficiencies</h3>
+          <ul>
+            <li>
+              <p>Users must dispense paper towel prior to hand washing</p>
+            </li>
+            <li>
+              <p>Multiple steps are required to adjust the water temperature</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Redesign</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Amenities</h3>
+          <ol>
+            <li>
+              <p>Sinks with foot pedals</p>
+            </li>
+            <li>
+              <p>Automatic soap dispensers</p>
+            </li>
+            <li>
+              <p>Lights that remain illuminated for the recommended duration of hand washing (activated by dispensing soap)</p>
+            </li>
+            <li>
+              <p>Displays that outline the correct hand washing procedure</p>
+            </li>
+            <li>
+              <p>Automatic paper towel dispenser</p>
+            </li>
+            <li>
+              <p>Automatic exit door</p>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-6"> 
+          <div class="row">
+            <div class="col-md-12">
+              <img class="img-responsive img-right vertical-center" src="{{ url_for('static', filename='assets/images/projects/restroom/redesign2.png') }}" height="auto" width="100%" alt="" />
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+              <img class="img-responsive img-left" src="{{ url_for('static', filename='assets/images/projects/restroom/redesign.png') }}" height="auto" width="100%" alt="" />
+            </div>
+           </div>
+      </div>
+    </div>
+    <hr />
+    <!-- More Projects -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="more_projects" class="section_heading">More Projects</h2>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div>
+        <a href="{{ url_for('project_3') }}">
+          <img class="img-responsive img-center" src="{{ url_for('static', filename='assets/images/projects/preview/que.png') }}" height="100%" width="100%" alt="" />
+        </a>
+        </div>
+        <div>
+        <h5 class="text_center">Classroom Discussion Application</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+        <a href="{{ url_for('project_4') }}">
+          <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/glucose.png') }}" height="100%" width="100%"
+          alt="" />
+        </a>
+        </div>
+        <div>
+          <h5 class="text_center">Glucose Control System</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+        <a href="{{ url_for('project_2') }}">
+          <img class="img-responsive" src="{{ url_for('static', filename='assets/images/projects/preview/cognitive.jpg') }}" height="100%" width="100%" alt="" />
+        </a>
+        </div>
+        <div>
+          <h5 class="text_center">Intelligent Radiology Tutor</h5>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- Footer -->
+    <div id="copyright">
+      <p>@2017 by Aubrey Henderson. All rights reserved.</p>
+    </div>
+  </div>
+  <!-- end container -->
+  {% include "scripts.html" %}
+  </body>
+</html>
