@@ -215,7 +215,6 @@ h6 {
 }
 #hover_overlay {
   width: 100%;
-  height: 42px;
   background: #42B3AD;
   position: absolute;
   left: 0;
@@ -229,9 +228,9 @@ h6 {
   /* Default is baseline, this fixes a common alignment issue */
 }
 .portfolio_image:hover .overlay {
+  height: 42px;
   bottom: 24px;
   width: 100%;
-  height: 42px;
   background: #42B3AD;
   position: absolute;
   left: 0;
@@ -540,6 +539,23 @@ h6 {
     -webkit-column-count: 2;
     column-count: 2;
   }
+  .portfolio_image:hover .overlay {
+    font-size: 6px;
+    bottom: 18px;
+    height: 30px;
+    width: 100%;
+    background: #42B3AD;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .portfolio_image:hover .overlay img {
+    vertical-align: top;
+    /* Default is baseline, this fixes a common alignment issue */
+  }
   .mobile_hidden {
     display: none;
   }
@@ -560,7 +576,7 @@ h6 {
   }
   /* About */
   .banner {
-    height: 200px;
+    height: 150px;
     width: 200%;
     background: url('../assets/images/about_bg.jpg') no-repeat;
     background-size: cover;
@@ -574,14 +590,14 @@ h6 {
   }
   #card_half {
     height: 114.553px;
-    width: 125px;
+    width: 150px;
     float: left;
     background-color: white;
   }
   #card {
-    margin: -165px auto 10px auto;
+    margin: -114px auto 10px auto;
     height: 140px;
-    width: 225px;
+    width: 250px;
     background-color: none;
     position: relative;
   }
@@ -598,10 +614,10 @@ h6 {
     box-sizing: border-box;
   }
   #card_text {
-    margin: 10px auto auto 10px;
+    margin: 10px auto auto 20px;
   }
   .social_media {
-    margin: 0 0 0 60px;
+    margin: 0 0 0 75px;
     padding: 0 0 0 0;
   }
   .social_media li {
@@ -610,7 +626,7 @@ h6 {
   }
   .social_media li a {
     font-size: 12px;
-    line-height: 24px;
+    line-height: 25px;
     display: inline-block;
     text-decoration: none;
     margin: 0;
@@ -669,11 +685,6 @@ h6 {
     line-height: 1;
     white-space: nowrap;
   }
-  .masonry {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
-  }
   h1 {
     margin-bottom: 75px;
     font-size: 20px;
@@ -688,8 +699,54 @@ h6 {
     font-weight: bold;
     text-transform: uppercase;
   }
+  h3 {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 4;
+  }
+  h4 {
+    font-family: Raleway;
+    font-size: 10px;
+    line-height: .75;
+    font-weight: bold;
+  }
+  h5 {
+    font-family: Raleway;
+    font-size: 7px;
+    line-height: .75;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  h6 {
+    font-family: Raleway;
+    font-size: 7px;
+    line-height: .75;
+  }
   p {
     font-size: 12px;
+  }
+  /* Portfolio */
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  .portfolio_image:hover .overlay {
+    font-size: 10px;
+    height: 42px;
+    bottom: 20px;
+    width: 100%;
+    background: #42B3AD;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .portfolio_image:hover .overlay img {
+    vertical-align: top;
+    /* Default is baseline, this fixes a common alignment issue */
   }
   /* Skills */
   .skills .icon {
@@ -712,6 +769,67 @@ h6 {
     width: 38px;
     display: inline-block;
     text-align: left;
+  }
+  /* About */
+  .banner {
+    height: 200px;
+    width: 100%;
+    background: url('../assets/images/about_bg.jpg') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #my_photo {
+    width: 125px;
+  }
+  #card_half {
+    height: 143.167px;
+    width: 175px;
+    float: left;
+    background-color: white;
+  }
+  #card {
+    margin: -143px auto 10px auto;
+    height: 169px;
+    width: 300px;
+    background-color: none;
+    position: relative;
+  }
+  #card_base {
+    background-color: #42B3AD;
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #card_text {
+    margin: 15px auto auto 20px;
+  }
+  .social_media {
+    margin: 0 0 0 100px;
+    padding: 0 0 0 0;
+  }
+  .social_media li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+  }
+  .social_media li a {
+    font-size: 12px;
+    line-height: 24px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+    text-align: center;
   }
   /* Contact */
   #contact-form {
@@ -748,9 +866,9 @@ h6 {
     text-align: center;
   }
   .portfolio_image:hover .overlay {
+    height: 42px;
     bottom: 22px;
     width: 100%;
-    height: 42px;
     background: #42B3AD;
     position: absolute;
     left: 0;
@@ -776,6 +894,29 @@ h6 {
     font-weight: bold;
     text-transform: uppercase;
   }
+  h3 {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 3;
+  }
+  h4 {
+    font-family: Raleway;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  h5 {
+    font-family: Raleway;
+    font-size: 9px;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  h6 {
+    font-family: Raleway;
+    font-size: 7px;
+    line-height: .75;
+  }
   /* Skills */
   .skills .icon {
     width: 140px;
@@ -791,6 +932,67 @@ h6 {
     z-index: 1;
     -webkit-transition: color 0.2s ease-in;
     transition: color 0.2s ease-in;
+    text-align: center;
+  }
+  /* About */
+  .banner {
+    height: 225px;
+    width: 100%;
+    background: url('../assets/images/about_bg.jpg') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #my_photo {
+    width: 150px;
+  }
+  #card_half {
+    height: 171.8px;
+    width: 200px;
+    float: left;
+    background-color: white;
+  }
+  #card {
+    margin: -172px auto 10px auto;
+    height: 205px;
+    width: 350px;
+    background-color: none;
+    position: relative;
+  }
+  #card_base {
+    background-color: #42B3AD;
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #card_text {
+    margin: 20px auto auto 25px;
+  }
+  .social_media {
+    margin: 0 0 0 115px;
+    padding: 0 0 0 0;
+  }
+  .social_media li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+  }
+  .social_media li a {
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
     text-align: center;
   }
 }
