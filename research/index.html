@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Aubrey Henderson</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/normalize.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/index.css">
+    <link rel="stylesheet" href="/SSUI-Homework-6/static/css/project.css">
+  </head>
+  <body>
+    <!--<div id="for_testing"></div>-->
+  <!-- Header -->
+  <div class="container">
+       <div class="row">
+      <div class="col-6">
+        <a class="main_a" href="/SSUI-Homework-6/">
+          <span id="logo">Aubrey Henderson</span>
+          <br />
+          <span id="role">UX Designer &amp; Researcher</span>
+        </a>
+      </div>
+      <div class="col-6 d-none d-lg-block">
+        <ul id="main_ul">
+          <li>
+            <a class="main_a" href="/SSUI-Homework-6/">Portfolio</a>
+          </li>
+          <li>
+            <a class="main_a" href="/SSUI-Homework-6/#skills">Skills</a>
+          </li>
+          <li>
+            <a class="main_a" href="/SSUI-Homework-6/#about">About</a>
+          </li>
+          <li>
+            <a class="main_a" href="/SSUI-Homework-6/#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+        <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
+          <a id="modal" class="main_a" href="#animatedModal" onclick="displayModal();" class="icon">
+              <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-none d-lg-block">
+          <hr id="main_hr" />
+        </div>
+      </div>
+    
+    <!-- menu modal -->
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-animatedModal"> <i class="fa fa-times-circle"></i> </div>
+        <div class="modal-content">
+          
+        <div id="modal_row" class="row">
+          <div id="modal_ul" class="col-12">
+            <ul>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/#main">Portfolio</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/#skills">Skills</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/#about">About</a></li>
+              <li><hr class="modal_hr" /></li>
+              <li><a class="modal_a" onClick="closeModal();" href="/SSUI-Homework-6/#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div> <!-- end modal-content -->
+    </div>
+    <div id="main_page">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="project_photo img-responsive" src="/SSUI-Homework-6/static/assets/images/projects/preview/ucre.jpg" width="85%" alt="" />
+        </div>
+        <div class="col-md-7">
+          <div>
+            <h1 class="center-text">Programmer-Centered Research</h1>
+            <p class="justify-text">The purpose of this project was to discover design opportunities by identifying breakdowns in
+            the process that programmers use to develop code.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <hr id="project_hr" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Project Overview</h2>
+          <p>
+          <strong>Course Title:</strong> User-Centered Research &amp; Evaluation
+          <br />
+          <strong>Project Type:</strong> Team
+          <br />
+          <strong>Duration</strong>: 6 weeks
+          <br />
+          <strong>Methods</strong>: contextual inquiry, work models, affinity diagrams, data consolidation, visioning
+          <br /></p>
+        </div>
+        <div class="col-md-7">
+          <h2>Introduction</h2>
+          <p class="clearfix">With the goal of designing methods/tools to improve programmers’ effectiveness, we followed the
+          contextual design process to develop a deeper understanding of the programming process and how information flows among
+          programmers and the systems they use.</p>
+        </div>
+      </div>
+      <hr />
+      <!--==== Project Preview HTML ====-->
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Observation &amp; Interpretation</h2>
+          <p>We began by observing students completing programming assignments for a computer systems course at Carnegie Mellon
+          University. Each of our observations (5 total) lasted for approximately one hour.</p>
+          <p>Next, my 4 teammates and I participated in several interpretation sessions. During these sessions, each observer
+          recounted the events that transpired during his/her observation session while other team members repackaged key
+          information into notes containing insights, sequence models, and flow models.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/sequence_model.jpg" height="auto" width="100%" alt="" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/flow_model.jpg" height="auto" width="100%" alt="" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Data Consolidation</h2>
+          <p>Affinity diagrams offer an effective way to organize data and ideas. This step of the process allowed us to more
+          easily visualize the essence of the data and uncover persistent issues.</p>
+         
+        </div>
+      </div>
+                              <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/affinity.jpg" width="100%" alt="Photo of affinity diagram" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="section_heading">Sequence Consolidation</h2>
+          <p>The goal of sequence consolidation is to create a set of procedures that describe all of the collected sequences. This
+          step allowed us to obtain a more complete picture of the users’ intents and the processes that they employ during task
+          performance.</p>
+        </div>
+        <div class="col-md-8">
+          <img class="img-responsive img-center col_center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/consolidated_sequence.png" height="auto" width="100%" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 order-md-2">
+          <h2 class="section_heading">Flow Consolidation</h2>
+          <p>To create a single, consolidated flow model we began by merging all of the objects with the same title. For each new
+          object, we then added all of the responsibilities and communication paths from all its representatives in the original
+          models. Finally, we revised the new model to reduce synonymous items (objects, responsibilities, or communication
+          flows).</p>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <img class="img-responsive img-center col_center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/consolidated_flow.png" height="auto" width="100%" alt="" />
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section_heading">Visioning</h2>
+          <p>This final step involved (1) brainstorming design ideas grounded in data, and (2) telling a story about how the users’
+          work will change when a new system is introduced.</p>
+          <p>To effectively illustrate how our three candidate solutions might address the problems identified, we created a series
+          of storyboards.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="center-text">V1: TA Queuing System</h4>
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/vision_1.png" height="auto" width="100%" alt="" />
+          <p>The consolidated sequence model revealed the existence of long periods where students wait for TA feedback.
+          Furthermore, any knowledge generated from student-TA interactions is lost after the session. We propose a system that not
+          only helps students queue for TAs, but stores the information obtained from the help session in an interactive FAQ
+          document.</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="center-text">V2: Assignment Code Repositories</h4>
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/vision_2.png" height="auto" width="100%" alt="" />
+          <p>Our affinity diagram communicates that students want to access past versions of their code, share it with TAs, and
+          understand how past code submissions were evaluated by AutoLab. To address these user needs, we propose a system that
+          creates repositories for each assignment. Students receive starter code when they check out the repository. Once code
+          changes are committed, they automatically receive feedback from Autolab (which is then stored and indexed).</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="center-text">V3: Integrated Development Environment</h4>
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/ucre/vision_3.png" height="auto" width="100%" alt="" />
+          <p>Our consolidated flow model revealed distant links between the code editing software students use and important
+          reference materials (e.g. external resources, style guidelines, assignment details, etc.). We therefore propose an
+          integrated development environment that helps users identify errors, find useful resources, and submit questions to
+          peers. Notably, this application would reduce the amount of switching between different windows that all contain
+          information needed to perform the programming task.</p>
+        </div>
+      </div>
+          <hr />
+    <!-- More Projects -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="more_projects" class="section_heading">More Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div>
+        <a href="/SSUI-Homework-6/classroom/">
+          <img class="img-responsive img-center" src="/SSUI-Homework-6/static/assets/images/projects/preview/que.png" height="100%" width="100%" alt="" />
+        </a>
+        </div>
+         <div>
+        <h5 class="text_center">Classroom Discussion Application</h5>
+      </div>
+      </div>
+   
+      <div class="col-md-4">
+      <div>
+        <a href="/SSUI-Homework-6/glucose/">
+          <img class="img-responsive" src="/SSUI-Homework-6/static/assets/images/projects/preview/glucose.png" height="100%" width="100%"
+          alt="" />
+        </a>
+        </div>
+              <div>
+        <h5 class="text_center">Glucose Control System</h5>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+        <a href="/SSUI-Homework-6/restroom/">
+          <img class="img-responsive" src="/SSUI-Homework-6/static/assets/images/projects/preview/restroom.jpg" height="100%" width="100%" alt="" />
+        </a>
+        </div>
+        <div>
+        <h5 class="text_center">Public Restroom Redesign</h5>
+      </div>
+      </div>
+         </div>
+
+      <!-- Footer -->
+      <div id="copyright">
+        <p>@2017 by Aubrey Henderson. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- end container -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/popper.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/animatedModal.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/wow.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SSUI-Homework-6/static/js/index.js"></script>
+    
+  </body>
+</html>
