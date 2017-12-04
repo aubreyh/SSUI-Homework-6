@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <body>{% include "project_head.html" %}
-  <div id="for_testing"></div>
+  <!--<div id="for_testing"></div>-->
   <!-- Header -->
-  <div class="container">{% include "project_header.html" %}
+  <div class="container">
+  {% include "project_header.html" %}
   <div id="main_page">
     <div class="row">
       <div class="col-md-5">
@@ -402,12 +403,13 @@
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <div id="copyright">
-        <p>@2017 by Aubrey Henderson. All rights reserved.</p>
-      </div>
     </div>
-  </div></div>
-  <!-- end container -->
-  {% include "scripts.html" %}</body>
+    <!-- Footer -->
+    <div id="copyright">
+      <p>@2017 by Aubrey Henderson. All rights reserved.</p>
+    </div>
+  </div>
+  </div><!-- end container -->
+  {% include "project_scripts.html" %}
+  </body>
 </html>

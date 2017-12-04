@@ -445,6 +445,7 @@ h6 {
 #submit_button {
   border: 3px solid #000000;
   float: right;
+  background-color: #F2F1F1;
 }
 #copyright {
   margin: 15px auto auto;
